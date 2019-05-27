@@ -20,5 +20,6 @@ const validateArtistName = artist => {
   return Joi.validate(artist, schema);
 };
 
+exports.artistSchema = artistSchema;
 exports.Artist = mongoose.model("artist", artistSchema);
 exports.validator = validateArtistName;
